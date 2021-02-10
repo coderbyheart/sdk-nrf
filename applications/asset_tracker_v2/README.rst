@@ -25,7 +25,7 @@ Overview
 
 The application samples sensor data and publishes the data to a connected cloud service over TCP/IP via LTE.
 As of now, the application supports `AWS IoT Core`_.
-The application is intended to be used with an instance of `Asset Tracker cloud example for AWS`_ running on the cloud side.
+The application is intended to be used with an instance of `Asset Tracker Cloud Example for AWS`_ running on the cloud side.
 
 Firmware architecture
 =====================
@@ -79,8 +79,8 @@ Currently, the application supports Amazon Web Services IoT Core cloud service a
 * `TLS`_
 * :ref:`FOTA <nrf9160_ug_fota>`
 
-To configure the application to use AWS IoT Core, see `Asset Tracker cloud example for AWS`_ .
-`Azure cloud support for Asset Tracker`_ is currently under implementation.
+To configure the application to use AWS IoT Core, see `Asset Tracker Cloud Example for AWS`_ .
+`Azure support for Asset Tracker v2`_ is currently under implementation.
 
 Device modes
 ============
@@ -223,10 +223,10 @@ These options can be used to enable and disable modules and modify their behavio
 Setup
 =====
 
-The application is compatible with the `Asset Tracker cloud example for AWS`_, which is an open source, serverless cloud backend and Web UI framework that is designed to store and graphically represent data sent from the application firmware.
-The `Asset Tracker Cloud Application`_ supports the manipulation of real-time configurations of the application.
+The application is compatible with the `Asset Tracker Cloud Example for AWS`_, which is an open source, serverless cloud backend and Web UI framework that is designed to store and graphically represent data sent from the application firmware.
+The `Asset Tracker Cloud Example web application`_ supports the manipulation of real-time configurations of the application.
 
-To set up the application to work with the Asset Tracker cloud example for AWS, see the `Getting started guide for Asset Tracker cloud example for AWS`_.
+To set up the application to work with the Asset Tracker Cloud Example for AWS, see the `Getting started guide for Asset Tracker Cloud Example for AWS`_.
 
 Configuration options
 =====================
