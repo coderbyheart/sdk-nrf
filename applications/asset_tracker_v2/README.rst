@@ -8,6 +8,17 @@ nRF9160: Asset Tracker v2
    :depth: 2
 
 The Asset Tracker v2 is a real-time configurable ultra-low-power capable application firmware for the nRF9160 System in Package (SiP).
+It is a complete rework of the :ref:`asset_tracker` application.
+This application introduces a set of new features, which are not present in the :ref:`asset_tracker` application:
+
+* **Ultra-low power by design** - The application highlights the power saving features of the nRF9160 SiP, which is critical for successfully developing small form-factor devices and/or products which need very long battery lifetime.
+* **Offline first** - Highly-mobile cellular IoT products need to handle unreliable connections gracefully by implementing mechanisms to retry the failed sending of data.
+* **Timestamping on the device** - Sensor data is timestamped on the device using multiple time sources. When the device is offline (planned or unplanned), the timestamping does not rely on the cloud side.
+* **Batching of data** - Data can be batched to reduce the number of messages transmitted, and to be able to retain collected data while the device is offline.
+* **Configurable parameters** - The parameters that control the application behavior (for example, accelerometer sensitivity, GPS timeout) can be configured at run time. This improves the development experience with individual devices or when debugging the device behavior in specific areas and situations. It also reduces the cost by reducing the frequency of programming  the firmware onto the devices.
+
+To implement the above features, a rework of the existing application was necessary.
+Hence, this application is not backward compatible to the :ref:`asset_tracker` application.
 
 Overview
 ********
