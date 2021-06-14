@@ -22,9 +22,15 @@ choice
 
 config GPS_MODULE_PVT
 	bool "Include PVT data in GPS fix event"
+	help
+	  PVT stands for position, velocity, and time.
+	  The GPS data will be send as a struct in the update.
 
 config GPS_MODULE_NMEA
 	bool "Include NMEA data in GPS fix event"
+	help
+	  NMEA is a defined ASCII representation of GPS data.
+	  The GPS data will be send as a string in the update.
 
 endchoice
 
