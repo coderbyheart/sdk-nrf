@@ -370,8 +370,8 @@ After programming the application and all the prerequisites to your development 
     <inf> app_event_manager: DATA_EVT_DATA_READY
     <inf> app_event_manager: GNSS_EVT_INACTIVE
     <inf> app_event_manager: DATA_EVT_DATA_SEND
-    <wrn> data_module: No batch data to encode, ringbuffers empty
-    <inf> app_event_manager: CLOUD_EVT_DATA_ACK
+    <dbg> data_module: data_encode: No batch data to encode, ringbuffers are empty
+    <inf> cloud_wrap_event_handler: CLOUD_WRAP_EVT_DATA_ACK
 
 .. _asset_tracker_v2_internal_modules:
 
